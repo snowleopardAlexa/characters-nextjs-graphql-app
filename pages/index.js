@@ -1,8 +1,13 @@
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
+import { useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home(results) {
+
+  const initialState = results
+  const [ characters, setCharacters ] = useState(initialState.characters)
+
   return (
     <div className={styles.container}>
       <Head>
