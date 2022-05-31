@@ -18,9 +18,9 @@ export default function Home(results) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="title">
-      <h3>
-         Rick and Morty Character API - GraphQL Apollo Client
-       </h3>
+       <h2>
+         Rick and Morty Characters
+       </h2>
        <Characters characters={characters} />
       </div>
     </div>
