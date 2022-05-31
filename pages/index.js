@@ -2,6 +2,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 import { useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Characters from '../components/Characters'
 
 export default function Home(results) {
 
@@ -20,6 +21,7 @@ export default function Home(results) {
       <h3>
          Rick and Morty Character API - GraphQL Apollo Client
        </h3>
+       <Characters characters={characters} />
       </div>
     </div>
   )
